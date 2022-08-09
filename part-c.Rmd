@@ -1,0 +1,37 @@
+---
+title: "Part C"
+author: "Charlie Joey Hadley"
+output: 
+  pagedown::html_paged:
+    toc: false
+knit: pagedown::chrome_print
+css: styles.css
+bibliography: references.bib
+csl: nature.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readxl)
+```
+
+# Report
+
+Your .Rmd document must read in the dataset from the data folder.
+
+```{r}
+survey_data <- read_excel("data/survey-data.xlsx")
+```
+
+You must cite the dataset and paper using cross references. As an example, here is a reference for a paper on food pairings @ahn_flavor_2011.
+
+You must use a {pagedown} format or template. This example document uses pagedown::html_paged with a limited amount of custom CSS. You do not need to customise the CSS for your report - you will not receive extra credit for a beautiful looking report.
+
+Note that when you knit this document is also generates a PDF file with the same name as the RMarkdown document. You must include both the .Rmd and PDF file in your submission.
+
+The lines below in this template demonstrate how to customise the appearance and position of the references, ie to add a heading.
+
+# References
+
+<div id="refs"></div>

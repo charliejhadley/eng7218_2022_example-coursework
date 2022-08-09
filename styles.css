@@ -1,0 +1,14 @@
+/* page size */
+@page {
+  size: 210mm 297mm;
+}
+
+.pagedjs_left_page .pagedjs_margin-top-center {
+  font-size: 16px;
+}
+
+/* Remove blank page before references */
+.level1 {
+  break-before: page;
+}
+
