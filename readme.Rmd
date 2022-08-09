@@ -1,6 +1,7 @@
 ---
 title: "ENG7218 Example Coursework (for 2022)"
 output: github_document
+self-contained: true
 date: "2022-08-09"
 ---
 
